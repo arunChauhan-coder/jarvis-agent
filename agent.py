@@ -12,7 +12,7 @@ class AgentState(TypedDict):
 
 def simplify_node(state: AgentState):
     # 2. CHANGE THE LLM ENGINE HERE
-    llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0.7) 
+    llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.7) 
     
     concept_to_explain = state["concept"]
     
