@@ -18,7 +18,7 @@ if st.button("Simplify it for me"):
             # 4. Make the call to the FastAPI Kitchen!
             # We send the user_concept to exactly the URL we tested earlier
             response = requests.post(
-                "http://127.0.0.1:8000/simplify", 
+                "https://jarvis-agent-qqfk.onrender.com/simplify", 
                 params={"concept": user_concept}
             )
             
